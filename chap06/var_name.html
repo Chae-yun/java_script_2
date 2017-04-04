@@ -1,0 +1,24 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	//매개변수의 개수에 상관없음
+	//Max 메서드
+	var a=4;
+	var b=3;
+	function two_switch(c,d){
+		var temp;
+		if(c>d){
+			temp=c;
+			c=d;
+			d=temp;
+		}
+		document.write("크기순 : "+c+", "+d);
+	}
+	two_switch(a,b); //당연하다
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

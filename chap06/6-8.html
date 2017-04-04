@@ -1,0 +1,29 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>회원정보</title>
+  <link rel="stylesheet" href="myForm.css">
+  <script>
+	function sumAll(){
+		//alert(typeof(arguments)+' : '+arguments.length);
+		var output=0;
+		for(var j=0;j<arguments.length;j++){
+			output+=arguments[j];
+		}
+		return output;
+	}
+	function averageAll(){
+		var output=0;
+		for(var j=0;j<arguments.length;j++){
+			output+=arguments[j];
+		}
+		output/=arguments.length;
+		return output;
+	}
+	alert(sumAll(1,2,3,4,5,6,7,8,9));
+	alert(averageAll(1,2,3,4,5,6,7,8,9));
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/form.css">
+  <script>
+	window.onload=myFunction;
+	function myFunction(){
+		var str="HELLO WORLD";
+		str=str.charAt(0);
+		document.write(str+"<br>");
+		str=str.charCodeAt(0);
+		document.write(str+"<br>");
+
+		var str1="How ";
+		var str2="Are You?";
+		var res=str1.concat(str2);
+		document.write(res+"<br>");
+
+		var res=String.fromCharCode(65);
+		document.write(res+"<br>");
+
+		var str="Hello world, welcome to the universe.";
+		var n=str.indexOf("welcome");
+		document.write(n+"<br>");
+		var n=str.lastIndexOf("universe");
+		document.write(n+"<br>");
+		var n=str.slice(1,4); //인덱스
+		document.write(n+"<br>");
+		var n=str.substr(1,4); //개수
+		document.write(n+"<br>");
+		var n=str.substring(1,4); //인덱스
+		document.write(n+"<br>"); //헷갈리기 딱 좋은 것! 외우기
+	}
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

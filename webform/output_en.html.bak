@@ -1,0 +1,51 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+   table, th, td { border:1px solid black;
+                   padding:10px;
+				   border-collapse:collapse; } /*collapse는 테두리 한 줄로 합치기*/
+   .num { text-align:right; } /*.은 클래스 #은 아이디?*/
+   div { width:300px; padding:5px; font-weight:bold; } /*이거 주려고 밑에서 디브로 나눔*/
+   output { background-color:silver; padding:5px; }
+  </style>
+  <script>
+   function calculate(){ //이벤트 핸들러
+    var inputs=document.getElementsByTagName("input"); //s가 들어간다, id를 읽어올 것이 많으므로 태그이름으로 읽어온다. 중요중요중요
+	var sumitem=document.getElementById("sumitem"); //이 둘은 얻어오기 위한 거
+	var sumprice=document.getElementById("sumprice");
+	var itemOfsum=0; //수량 //이 둘은 연산하기 위해 선언한 지역변수
+	var priceOfsum=0; //가격
+	
+	for(var i=0;i<inputs.length;i++)
+	{
+
+		//수량계산
+		//itemOfsum+=inputs[i].value; //문자열더하기 -> 숫자화
+	    itemOfsum+=Number(inputs[i].value); //1번째 Number 생성자함수(넘버 객체) 쓰기 math클래스랑 비슷 중요중요중요
+		
+		priceOfsum+=Number(inputs[i].value)*document.getElementById(inputs[i].id+"p").innerHTML; //태그 요소에 뿌릴때나 가져올 때나 둘다 innerHTML을 쓴다
+		
+	}
+    //alert(itemOfsum);
+	//alert(priceOfsum);
+	sumitem.value=itemOfsum;
+	sumprice.value=priceOfsum;
+   }
+  </script>
+ </head>
+ <body> <!--태그==요소-->
+  <form id="myForm" method="post" oninput="calculate()"> <!--원래 name id action method 이 네 개가 필수--> <!--이벤트 발생-->
+   <table>
+    <tr><th>상품</th><th>가격(원)</th><th>수량</th></tr>
+	<tr><td>키보드</td><td id="i1p" class="num">40000</td><td><input type="number" min=1 max=100 id="i1"></td></tr>
+	<tr><td>마우스</td><td id="i2p" class="num">20000</td><td><input type="number" min=1 max=100 id="i2"></td></tr>
+	<tr><td>모니터</td><td id="i3p" class="num">250000</td><td><input type="number" min=1 max=100 id="i3"></td></tr>
+   </table>
+   <div>장바구니에 담을 물건<output for="i1 i2 i3" id="sumitem"></output> 개</div> <!--for는 가독성을 위한 것-->
+   <div>총 구입가격<output for="i1p i2p i3p" id="sumprice"></output> 원</div>
+  </form>
+  <!--submit에는 default이벤트가 걸려있기 때문에 넣으면 안됨 왜인지 이해가 안됨-->
+ </body>
+</html>

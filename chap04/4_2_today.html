@@ -1,0 +1,21 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+	window.onload=function(){
+		var today=new Date();
+		var message="오늘의 날짜는 "+today.getFullYear()+"년 "+(today.getMonth()+1)+"월 "+today.getDate()+"일 "+today.getDay()+"요일 시간은 "+today.getHours()+":"+today.getMinutes();
+		//요일 한글로 예쁘게 표현하려면 배열써야함
+		var output=document.getElementById("output");
+		output.innerHTML=message;
+	}
+	
+  </script>
+ </head>
+ <body>
+	<div id="output"></div>
+ </body>
+</html>

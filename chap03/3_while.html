@@ -1,0 +1,20 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+	//while문을 이용하여 1초(1000) 동안 문장을 실행(브라우저)하는 횟수를 센다 많으면 굿
+	//브라우저 성능 테스트 예제로 많이 쓰임
+	var count=0;
+	var date=new Date();
+	var startTime=date.getTime(); //1970년 1월 1일 이후 시간을 밀리초 단위로
+	while(new Date().getTime()<startTime+1000){//현재시간부터 현재시간+1초까지
+		count++;
+	}
+	alert(count);
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

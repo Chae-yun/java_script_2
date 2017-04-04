@@ -1,0 +1,22 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+  <form action="" name="" id="myForm" method="post">
+   <fieldset>
+   <legend> < 구매액 계산기 > </legend> <!--fieldset요소 안에서 이름넣을때 쓸 수 있다-->
+   <div><label>수량(개)<br><input type="number" min="1" id="quantity" value="1" required></label></div>
+   <div><label>단가(원)<br><input type="text" id="price" value="1.00" required></label></div>
+   <div><label>세율(%)<br><input type="text" id="taxRate" required placeholder="세금 = 총구매액 * 세율(%)"></label></div>
+   <div><label>총구매액(원)<br><input type="text" id="total" placeholder="총구매액 = 구매액 + 세금"></label></div>
+   <br><div><input type="submit" value="계산" id="submit"></div>
+   </fieldset> <!--css보다 훨씬 효과적으로 그룹핑할 수 있다-->
+  </form>
+  <script src="js/shopping.js"></script> <!--먼저 html요소를 부르고 자바스크립트를 불러야 성능 업-->
+ </body>
+</html>
+
+<!--pt는 몰라 px는 픽셀 em은 12pt가 1em percent는 1em이 100%-->

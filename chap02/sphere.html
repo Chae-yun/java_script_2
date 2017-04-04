@@ -1,0 +1,20 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+  <form action="" name="" id="myForm" method="post">
+   <fieldset>
+   <legend> < 구의 부피 계산기 > </legend> <!--fieldset요소 안에서 이름넣을때 쓸 수 있다-->
+   <div><label>반지름<br></label><input type="text" id="radius" required></div>
+   <div><label>부피<br></label><input type="text" id="volume">
+   <br><br><div><input type="submit" value="계산" id="submit"></div>
+   </fieldset> <!--css보다 훨씬 효과적으로 그룹핑할 수 있다-->
+  </form>
+  <script src="js/sphere.js"></script> <!--먼저 html요소를 부르고 자바스크립트를 불러야 성능 업-->
+ </body>
+</html>
+
+<!--pt는 몰라 px는 픽셀 em은 12pt가 1em percent는 1em이 100%-->

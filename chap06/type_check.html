@@ -1,0 +1,18 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	//함수 매개변수의 타입 검사를 하지 않는다.
+	function add(x,y){
+		if((typeof x=='number')&&(typeof y=='number')){ //숫자만 하고 싶다면 이렇게 유효성 체크!
+			document.write(x+y+'<br>');
+		}
+	}
+	add(4,5);
+	add('hello','world','!!');
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

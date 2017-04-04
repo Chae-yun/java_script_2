@@ -1,0 +1,17 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	bgclr=new Array("red","blue","magenta","yellow","pink","green");
+	
+	i=0;
+	setInterval(function(){
+		document.bgColor=bgclr[i++];
+		if(i==bgclr.length){ i=0; }
+	},1000);
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

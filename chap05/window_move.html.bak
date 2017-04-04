@@ -1,0 +1,19 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/form.css">
+  <script>
+	var child=window.open("","","width=50,height=50");
+	child.document.write("<h1>From Parent Window</h1>");
+	child.moveTo(10,10);
+
+	setInterval(function(){
+		child.moveBy(50,50);
+		child.resizeBy(100,100);
+	},1000); //대표적인 익명함수
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

@@ -1,0 +1,29 @@
+body{
+	background-color:#EAEAEA;
+	margin:auto;
+}
+img{
+	margin:25px;
+	width:300px;
+}
+video{
+	margin-left:48px;
+	margin-top:105px;
+	width:260px;
+}
+footer{
+	margin-top:300px;
+	margin-left:35px;
+	font-size:80%;
+}
+button{
+	background:rgba(0,0,0,0);
+	border:0;
+	opacity: 0; 
+}
+select{
+	margin-top:5px;
+}
+#control{
+	margin-left:350px;
+}

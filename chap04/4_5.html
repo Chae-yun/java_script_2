@@ -1,0 +1,27 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/form.css">
+ </head>
+ <body>
+	<form action="#" method="post" id="theForm">
+		<fieldset><legend>신입직원</legend>
+			<div><label for="firstName">이름</label>
+			<input type="text" name="firstName" id="firstName" required></div>
+			<div><label for="lastName">성</label>
+			<input type="text" name="lastName" id="lastName" required></div>
+			<div><label for="department">부서</label>
+			<select name="department" id="department">
+				<option value="Accounting">회계팀</option>
+				<option value="Development">개발팀</option>
+				<option value="Human Resources">인사팀</option>
+				<option value="Marketing">마케팅팀</option><!-- 자바스크립트로 전달되는 값은 영어(value) -->
+			</select></div>
+			<input type="submit" value="입력" id="submit">
+		</fieldset>
+		<div id="output"></div>
+		<script src="js/employee.js"></script>
+	</form>
+ </body>
+</html>

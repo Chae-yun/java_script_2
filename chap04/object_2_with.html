@@ -1,0 +1,31 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+
+	var student={
+		이름:'너미림',
+		국어:90,
+		영어:80,
+		수학:100,
+		자스:98,
+		output:"이미존재" //with 때문에 객체 안의 키값과 전역변수 이름이 같을 때 충돌이 일어남
+		//이럴 때는 객체의 속성을 우선
+	};
+	var window.output=''; //3번 this! 윈도우(글로벌 오브젝트)와 같다
+	with(student){ //키 값에 student.를 붙여라
+		window.output+='이름:'+이름+'\n';
+		window.output+='국어:'+국어+'\n';
+		window.output+='영어:'+영어+'\n';
+		window.output+='수학:'+수학+'\n';
+		window.output+='자스:'+자스+'\n';
+		window.output+='총점:'+(국어+영어+수학+자스);
+	}
+	alert(window.output);
+
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

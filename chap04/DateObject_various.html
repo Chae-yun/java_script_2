@@ -1,0 +1,35 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+	alert("첫번째 방법");
+
+	var date=new Date(1991, 11, 9);
+	alert(date);
+	var date=new Date(1991, 11, 9, 14, 24, 12);
+	alert(date);
+	var date=new Date(1991, 11, 9, 14, 24, 12, 1);
+	alert(date);
+
+	alert("두번째 방법");
+
+	var date=new Date('December 9');
+	alert(date);
+	var date=new Date('December 9, 1991');
+	alert(date);
+	var date=new Date('December 9, 1991 02:24:30');
+	alert(date);
+
+	alert("세번째 방법");
+
+	var date=new Date(86400000*10);
+	alert(date);
+  </script>
+ </head>
+ <body>
+
+ </body>
+</html>

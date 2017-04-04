@@ -1,0 +1,18 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	function test(name){
+		var output='Hello'+name+'...!';
+		return output; //지역변수를 리턴을 통해 억지로 메모리에 남기기
+	}
+	var test_1=test('Web');
+	var test_2=test('JavaScript');
+	alert(test_1);
+	alert(test_2);
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

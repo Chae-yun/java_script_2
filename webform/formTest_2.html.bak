@@ -1,0 +1,29 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css" href="css\styles.css">
+   input:required{ border-color:#88a; background:#99ccff; }
+   input:invalid{ border-color:#e88; background:#ffcccc; }
+  </style>
+  <script>
+   function showInfo(){
+    var files=document.getElementById("files").files;//잠, files 속성에 접근하여 피일의 속성값 얻어오기
+	var fileInfo=[]; //파일의 속성을 넣을 배열 선언
+	for (var i=0;i<files.length;i++)
+	{
+		fileInfo.push("파일의 이름 : "+files[i].name);
+		fileInfo.push("파일의 크기 : "+files[i].size +"Byte");
+	}
+	alert(fileInfo.join("<br>"));
+   }
+  </script>
+ </head>
+ <body>
+  <form name="myform" id="" action="">
+   <div><label>파일을 선택하시오 : </label><input type="file" multiple onchange="showInfo()" id="files"><br></div>
+   <!--파일의 속성 보여주기(이름, 사이즈) 보여주기-->
+   <input type="submit">
+  </form>
+ </body>
+</html>

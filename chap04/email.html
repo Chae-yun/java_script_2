@@ -1,0 +1,20 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/form.css">
+ </head>
+ <body>
+	<form action="#" method="post" id="theForm">
+		<fieldset><legend>Contact</legend>
+			<div><label for="email">Email Address</label>
+			<input type="text" name="email" id="email" required></div>
+			<div><label for="comment">Comments<br>(주의:태그 입력 불가)</label>
+			<textarea name="comment" id="comment" max=30 required></textarea></div>
+			<input type="submit" value="전송" id="submit">
+		</fieldset>
+		<div id="output"></div>
+		<script src="js/email.js"></script>
+	</form>
+ </body>
+</html>

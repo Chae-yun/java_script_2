@@ -1,0 +1,43 @@
+body{
+	width:90%;
+	margin:auto;
+	background-image:url('bg.gif');
+	background-size:2000px;
+	position:fixed
+}
+video{
+	margin:10px;
+}
+section{
+	display:block;
+	float:left; 
+	padding:20px;
+	margin:25px;
+	border-radius: 15px;
+	background:rgba(255,255,255,0.5);
+}
+footer{
+	display:block;
+	font-size:80%;
+	margin-left:10px;
+}
+footer span{
+	font-style:italic;
+}
+table{
+	color:white;
+}
+td{
+	width:350px;
+}
+button{
+	background:rgba(0,0,0,0);
+	border:0;
+	opacity: 0; 
+}
+select{
+	margin-top:5px;
+}
+div{
+	float:left;
+}

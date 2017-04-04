@@ -1,0 +1,79 @@
+body{
+	background-color:#AAE0E0; /* 하늘+회색 */
+	background-image:url('before.png'); /* 귀여운 이미지 */
+}
+
+form{
+	width:430px;
+	padding:15px;
+	background-color:#ffffff;
+	border:solid 2px #BDBDBD; /* 회색 */
+	outline:solid 40px #77D0D0; /* 보기 편하시도록! */
+	display:block;
+	margin:180px auto;
+}
+
+/* 그룹핑 */
+fieldset{
+	border:solid 2px #F08080; /* 라이트코랄 */
+}
+
+/* 네모의 글씨 */
+legend{
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+}
+
+label{
+	font-size:15px;
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:130px;
+	float:left;
+}
+
+/* 모든 내용은 필수입력입니다 */
+p{
+	font-size:15px;
+	margin-bottom:25px;
+}
+
+select{
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #BDBDBD; /* 회색 */
+	width:205px;
+	margin:0 0 15px 10px;
+}
+
+input{
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #BDBDBD; /* 회색 */
+	width:200px;
+	margin:0 0 15px 10px;
+}
+
+#check{
+	width:30px;
+	margin-top:10px;
+}
+
+#checkbox{
+	font-size:15px;
+	margin-left:80px;
+}
+
+#submit{
+	display:block;
+	font-size:15px;
+	height:35px;
+	width:160px;
+	background:#DBDBDB; /* 회색 */
+	text-align:center;
+	border:solid 0px;
+	font-weight:bold;
+	margin:10px auto 5px;
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="form.css">
+ </head>
+ <body>
+	<form id="myForm">
+		<fieldset><legend>단어 sorting</legend>
+			<p>아래 칸에 sort할 몇 단어를 입력하세요. 
+			단어사이는 공백처리를 해야 하며 문장으로 입력해도 무방합니다. 
+			입력이 끝나면 버튼을 누르세요.</p>
+			<div><label>단어 및 문장</label></div>
+				<input type="text" id="words" required>
+				<input type="submit" value="SORT!!" id="submit">
+			<h2>정렬 결과</h2>
+			<div id="output"></div>
+		</fieldset>
+	</form>
+	<script src="sort_words.js"></script>
+ </body>
+</html>

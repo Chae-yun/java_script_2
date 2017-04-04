@@ -1,0 +1,26 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+	<form action="" name="" id="myForm" method="post">
+		<fieldset>
+			<legend> 멤버십 가입 </legend> <!--fieldset요소 안에서 이름넣을때 쓸 수 있다-->
+			멤버십에 가입하세요. 2년이상을 선택하시면 20%의 년회비 할인혜택이 있습니다.<br><br>
+			type<div align="right">
+			<select id="type"> <!--항상 이 넷중에 하나만 전달되므로 id는 select에!-->
+				<option value="basic">Basic-10000원</option>
+				<option value="premium">Premium-15000원</option>
+				<option value="gold">Gold-20000원</option>
+				<option value="platinum">Platinum-25000원</option>
+			</select></div>
+			기간<div align="right"><input type="number" id="year" min="1" max="5"></div>
+			년회비<div align="right"><input type="text" id="cost" disabled></div>
+			<br><div><input type="submit" value="Calculate" id="submit"></div>
+		</fieldset> <!--css보다 훨씬 효과적으로 그룹핑할 수 있다-->
+	</form>
+  <script src="js/membership.js"></script>
+ </body>
+</html>

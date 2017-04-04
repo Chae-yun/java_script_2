@@ -1,0 +1,21 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+   var date=new Date(); //Date 객체! 자바와는 좀 다르다
+   var hour=date.getHours(); //데이트의 많은 것들중에 시간만!  0~23
+   if(hour<12){ //hour는 24시 형태이기 때문에 이렇게 나누어 줌
+	   document.write("오전입니다");
+	   alert(hour);
+   }else{
+	   document.write("오후입니다");
+	   alert(hour);
+   }
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

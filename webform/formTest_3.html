@@ -1,0 +1,45 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css" href="css\styles.css">
+   input:required{ border-color:#88a; background:#99ccff; }
+   input:invalid{ border-color:#e88; background:#ffcccc; }
+  </style>
+  <script>
+   /*function alertValue(){
+	var range=document.getElementById("range").value;
+	document.getElementById("output").innerHTML=range;
+	//var output=document.getElementById("output");
+    //output.innerHTML=range
+   }*/ //1번째 방법
+   
+   /*function alertValue(){
+	var range=document.getElementById("range");
+	var output=document.getElementById("output");
+	output.value=range.value;
+   }*/ //2번째 방법
+
+   function alertValue(){
+	var range=document.getElementById("range").value;
+	var output=document.getElementById("output");
+	output.value=range;
+   } //3번째 방법
+
+   /*function alertValue(){
+	var range=document.getElementById("range").value;
+	//document.getElementById("output").innerText=Value;
+	var output=document.getElementById("output");
+    output.innerText=range
+   }*/ //4번째 방법 근데 이너텍스트나 이너에체테멜로 하면 결과가 output for="range"일때는 결과 나오는디 input 으로 하면 안나옴;;
+  </script>
+ </head>
+ <body>
+  <form oninput="alertValue()" name="myForm" id="" action="">
+   <div><label>수치값을 입력하시오 : </label><input type="range" min="0" max="100" value="0" id="range"><br></div>
+   <!--<div><label>결과 : </label><input id="output"><br></div>-->
+   <div><label>결과 : </label><output for="range" id="output"><br></div>
+   <input type="submit">
+  </form>
+ </body>
+</html>

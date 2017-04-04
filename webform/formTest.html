@@ -1,0 +1,35 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css" href="css\styles.css">
+   input:required{ border-color:#88a; background:#99ccff; }
+   input:invalid{ border-color:#e88; background:#ffcccc; }
+  </style>
+  <script>
+   
+  </script>
+ </head>
+ <body>
+  <form name="myform" id="" action="">
+   <div><label><p>텍스트를 입력해 주세요.<br>
+   예) 홍길동123</p></label>
+   <input type="text" required><br></div>
+   <div><label>이&nbsp;&nbsp;&nbsp;름 : </label><input type="text" required><br></div>
+   <div><label>이메일 : </label><input type="email" autofocus><br></div>
+   <div><label>연락처 : </label><input type="tel"><br></div>
+   <div><label>검색 : </label><input type="search" results="0"><br></div> <!--리절트는 돋보기-->
+   <div><label>전화번호 : </label><input type="tel" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"required><br></div>
+   <div><label>url주소 : </label><input type="url"><br></div>
+   <div><label>시간 : </label><input type="time"><br></div>
+   <div><label>날짜 : </label><input type="date" id="date"><br></div>
+   <div><label>주단위 : </label><input type="week"><br></div>
+   <div><label>달단위 : </label><input type="month"><br></div>
+   <div><label>색상 : </label><input type="color"><br></div>
+   <div><label>음량 : </label><input type="range" min="0" max="100" value="10" id="volume" step="5"><br></div>
+   <div><label>수량 : </label><input type="number" min="0" max="100" value="1"><br></div>
+   <div><progress value="10" max="100"></progress></div>
+   <input type="submit">
+  </form>
+ </body>
+</html>

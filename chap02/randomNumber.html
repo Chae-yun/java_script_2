@@ -1,0 +1,30 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+  window.onload=init;
+
+ 
+
+  function init(){
+   var button1;
+   var buttonB;//전역변수 선언, var 없어도 OK
+   button1=document.getElementById("buttonA"); //id로 html요소 읽어오기
+   buttonB=document.getElementById("buttonB");
+
+   button1.onclick=function(){ //함수 안에 함수
+    result.innerHTML=Math.floor(Math.random()*10+1); //소수점 이하 버림
+   }
+   buttonB.onclick=function(){
+    result.innerHTML=Math.floor(Math.random()*99+1);
+   }
+  }
+  </script>
+ </head>
+ <body>
+  <button id="buttonA">1부터 10사이의 무작위 수</button>
+  <button id="buttonB">1부터 100사이의 무작위 수</button><Br>
+  결과 : <div id="result"></div>
+ </body>
+</html>

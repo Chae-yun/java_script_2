@@ -1,0 +1,28 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+	var now=new Date();
+	var later=new Date('December 25, 2016');
+	var interval;
+	var one_day=1000*60*60*24;
+	var message="";
+	//var output=document.getElementById("output");
+
+	if(later>now){
+		interval=later.getTime()-now.getTime();
+		message="크리스마스까지 남은 날짜 : ";
+	}else{
+		interval=now.getTime()-later.getTime();
+		message="크리스마스로부터 지난 날짜 : ";
+	}
+	interval=Math.floor(interval/one_day); //반올림하라
+	message+=interval+"일";
+	alert(message);
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

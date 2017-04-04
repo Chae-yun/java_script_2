@@ -1,0 +1,17 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	test(); //호출부터해도 상관 업다 선언적 함수부터 전역객체가 1등으로 자리잡기 때문
+	function test(){
+		var age=43;
+	}
+	var age=11;
+	//test();
+	document.write(age+"<br>");
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="form.css">
+  <title>Document</title>
+ </head>
+ <body>
+	<section id="s1"> <!--semantic 태그-->
+		<div>
+		<video preload="" height=600
+		oncanplay="initControls()"
+		ontimeupdate="updateProgress()">
+			<source src="kimminsun.mp4">
+			이 브라우저는 비디오 태그를 지원하지 않습니다.
+		</video>
+		<footer>
+		Video copyright 2016 채윤
+		</footer>
+		</div>
+		<div>
+		<table align="center" height="15%" cellspacing="25px" cellpadding="15px">
+			<tr>
+				<td bgcolor="#99004C">
+					<legend>주요 장면</legend>
+					<select name="scenes" size=3 onchange="selectScene(this)">
+						<option value="0:00" selected>0:00 춤 시작~!</option>
+						<option value="0:04">0:04 앞에 찍고!! 뒤에 찍고!!</option>
+						<option value="0:10">0:10 엉덩이 흔들어봐</option>
+						<option value="0:14">0:14 민선이 얼굴 :-)</option>
+						<option value="0:18">0:18 다리 찍고!! 손가락 찍고!!</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#005766">
+					<legend>Player</legend>
+					<!--Play 버튼을 누를 때마다 playPause 함수를 실행-->
+					<!--유니코드를 이용해 버튼 만들기 : 유니코드 변환기 활용 =>
+					http://kor.pe.kr/convert.htm-->
+					<input type="image" class="btn" id="playButton" type="submit" onclick="playPause(this)" src="play.png">
+					<!--재생 위치의 표시 및 설정-->
+					<input type="range" min=0 max=1 value=0 step=1 onclick="updateProgress(this)" id="currentPosition">
+					<span id="timePlayed"></span>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#2A0066">
+					<legend>Volume</legend>
+					<input type="image" class="btn" id="volumeButton" type="submit" onclick="mute(this)" src="sound.png">
+					<!--재생 위치의 표시 및 설정-->
+					<input type="range" min=0 max=1 value=1 step=0.01 onchange="adjustVolume(this)">
+					Volume : <span id="currentVolume"></span>
+				</td>
+			</tr>
+			</tr>
+		</table>
+		</div>
+	</section>
+	<script src="videoPlayer.js"></script>
+ </body>
+</html>

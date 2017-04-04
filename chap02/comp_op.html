@@ -1,0 +1,17 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+   function test(){
+    age=43; //전역변수라 실행 후에도 남아있음
+   }
+   age=11; //전역변수
+   test();
+   document.write(age+"<br>"); //전역 43
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

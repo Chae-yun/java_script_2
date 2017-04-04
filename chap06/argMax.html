@@ -1,0 +1,35 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	//매개변수의 개수에 상관없음
+	//Max 메서드
+	function max(){
+		var init_max=arguments[0];
+		for(var i=1;i<arguments.length;i++){
+			if(arguments[i]>init_max){
+				init_max=arguments[i];
+			}
+		}
+		return init_max;
+	} //MAX메서드의 실제 내부와 똑같다
+
+	function min(){
+		var init_min=arguments[0];
+		for(var i=1;i<arguments.length;i++){
+			if(arguments[i]<init_min){
+				init_min=arguments[i];
+			}
+		}
+		return init_min;
+	}
+
+	alert(max(4,1,2,3));
+	alert(max()); //기본값을 가지지 않는다 -> undefined
+	alert(min(4,1,2,3));
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

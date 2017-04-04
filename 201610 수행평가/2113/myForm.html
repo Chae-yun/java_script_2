@@ -1,0 +1,40 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>회원정보</title>
+  <link rel="stylesheet" href="myForm.css">
+ </head>
+ <body>
+	<form action="#" method="post" id="myForm">
+		<fieldset><legend>회 원 정 보</legend>
+			<p>*모든 내용은 필수입력입니다.</p>
+			<label for="lastName">*** 성(姓) ***</label>
+			<input type="text" id="lastName">
+			<label for="firstName">*** 이 름 ***</label>
+			<input type="text" id="firstName">
+			<label for="email">이메일주소</label>
+			<input type="text" id="email">
+			<label for="mobile">전화(mobile)번호</label>
+			<input type="text" id="mobile">
+			<label for="dong">거주 동(洞)</label>
+			<input type="text" id="dong">
+			<label for="gu">거주 구(區)</label>
+			<select id="gu">
+				<option value="origin">구를 선택해 주세요.</option>
+				<option value="GA">관악구</option>
+				<option value="GN">강남구</option>
+				<option value="GB">강북구</option>
+				<option value="DDM">동대문구</option>
+				<option value="JR">종로구</option>
+				<option value="DB">도봉구</option>
+				<option value="SC">서초구</option>
+			</select>
+			<label for="rest">나머지 주소</label>
+			<input type="text" id="rest">
+			<div id="checkbox"><input type="checkbox" id="check">위 정보 제공에 동의합니다.</div>
+			<input type="submit" value="회원 가입" id="submit">
+		</fieldset>
+	</form>
+	<script src="myForm.js"></script>
+ </body>
+</html>

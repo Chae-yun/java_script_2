@@ -1,0 +1,25 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	/*function factorial(n){
+		for(var product=1;n>1;n--){
+			product*=n;
+		}
+		return product;
+	}*/
+	function factorial(n){
+		if(n<=1){
+			return 1;
+		}
+		else{
+			return n*factorial(n-1);
+		}
+	} //얘가 더 빠르지만 메모리에 부담
+	alert(factorial(10));
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

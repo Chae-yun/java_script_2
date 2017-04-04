@@ -1,0 +1,2 @@
+message = "Hello"
+alert(message);

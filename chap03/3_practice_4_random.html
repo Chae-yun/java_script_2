@@ -1,0 +1,28 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	button{ margin:20px;
+		   width:80px; }
+  </style>
+  <script>
+  window.onload=function(){
+	var button;
+	button=document.getElementById("but");
+
+	button.onclick=function(){
+		var num="";
+		for(var i=1;i<=6;i++){
+			num+=Math.floor((Math.random()*3)+1)+" "; //여기 왜 띄어쓰기 여러개 하면 안돼??
+		}
+		result.innerHTML=num;
+	}
+  }
+  </script>
+ </head>
+ <body>
+	<button id="but">복권 추첨</button><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;복권 당첨 번호 : <span id="result"></span>
+ </body>
+</html>

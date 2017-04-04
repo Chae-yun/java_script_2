@@ -1,0 +1,31 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css" href="css\styles.css">
+   input:required{ border-color:#88a; background:#99ccff; }
+   input:invalid{ border-color:#e88; background:#ffcccc; }
+  </style>
+  <script>
+   function gotourl(){
+    var myurl="http://"+document.getElementById("url").value; //http 꼭 붙여야 함
+	open(myurl);
+   }
+  </script>
+ </head>
+ <body>
+  <form name="myForm" id="" action="">
+   <label>goto
+   <input type="text" id="url" name="homepage" list="homepages" autofocus></label> <!--홈페이지스라는 이름을 가진 리스트를 불러오겠다-->
+   <!--텍스트 안에 데이터리스트를 불러오겠다-->
+   <!--autofocus를 넣으면 윈도우가 로드되고 커서가 자동으로 거기로!-->
+   <datalist id="homepages">
+    <option value="www.google.com">
+	<option value="www.naver.com">
+	<option value="www.daum.com">
+	<option value="www.facebook.com">
+   </datalist>
+   <input type="submit" value="이동" onclick="gotourl()">
+  </form>
+ </body>
+</html>

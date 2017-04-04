@@ -1,0 +1,23 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+	<form action="#" method="post" id="theForm">
+		<fieldset>
+			<legend>이벤트 날짜 결정</legend>
+			<div id="output"></div>
+			<p>이벤트의 시작일과 종료일을 입력하세요.</p>
+			<hr><br>
+			<div id="s_div"><label for="start">시작&nbsp;&nbsp;</label>
+			<input type="text" name="start" id="start" placeholder="MM/DD/YYYY" required></div><br>
+			<div id="e_div"><label for="end">종료&nbsp;&nbsp;</label>
+			<input type="text" name="end" id="end" placeholder="MM/DD/YYYY" required></div><br>
+			<input type="submit" value="결정" id="submit">
+		</fieldset>
+	</form>
+	<script src="js/event.js"></script>
+ </body>
+</html>

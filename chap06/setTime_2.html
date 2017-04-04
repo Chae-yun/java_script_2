@@ -1,0 +1,22 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	var str=new Array("자","바","스","크","립","트");
+	var text=document.getElementById("textbox");
+	message="";
+	i=0;
+	setInterval(function(){
+		message+=str[i++];
+		if(i==str.length){ i=0; }
+		textbox.value=message;
+	},1000);
+  </script>
+ </head>
+ <body>
+	<form action="" name="" id="myForm" method="post">
+		<input type="text" id="textbox">
+	</form>
+ </body>
+</html>

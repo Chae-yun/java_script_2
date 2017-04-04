@@ -1,0 +1,17 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+   function test(){
+    var age=43; //지역변수라 실행 후 가비지가 되어 사라짐
+   }
+   var age=11; //전역변수
+   test();
+   document.write(age+"<br>");
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>
